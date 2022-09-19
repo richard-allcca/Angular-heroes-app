@@ -24,6 +24,16 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 10. JSON-Server
 
+11. CRUD - Create, Read, Update, Delete
+
+12. Pipes puros e impuros
+
+13. Snacks
+
+14. Dialogs
+
+15. Inyección de servicios manualmente
+
 ## Enlaces
 
 - [Angular Material](https://material.angular.io/)

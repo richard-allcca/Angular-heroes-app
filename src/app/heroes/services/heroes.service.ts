@@ -24,4 +24,17 @@ export class HeroesService {
    getSugerencias(termino: string) {
       return this.http.get<Heroe[]>(`${this.baseUrl}/heroes?q=${termino}&_limit=6`);
    }
+
+   // Seccion 14 
+   agregarHeroe(heroe: Heroe) {
+      return this.http.post<Heroe>(`${this.baseUrl}/heroes`, heroe)
+   }
+
+   editarHeroe(heroe: Heroe) {
+      return this.http.put<Heroe>(`${this.baseUrl}/heroes/${heroe.id}`, heroe)
+   }
+
+   eliminarHeroe(id: string) {
+      return this.http.delete(`${this.baseUrl}/heroes/${id}`)
+   }
 }

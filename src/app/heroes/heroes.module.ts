@@ -12,6 +12,7 @@ import { HeroeComponent } from './pages/heroe/heroe.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ImagenPipe } from './pipes/imagen.pipe';
 import { ListadoComponent } from './pages/listado/listado.component';
+import { ConfirmarComponent } from './components/confirmar/confirmar.component';
 
 
 
@@ -26,6 +27,7 @@ import { ListadoComponent } from './pages/listado/listado.component';
       HomeComponent,
       ImagenPipe,
       ListadoComponent,
+      ConfirmarComponent
    ],
    imports: [
       CommonModule,
