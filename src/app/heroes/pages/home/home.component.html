@@ -38,14 +38,17 @@
    <!-- ANCHOR - Nav bar horizontal -->
 
    <mat-toolbar>
-      <button mat-icon-button
-         (click)="sidenav.toggle()">
+      <button (click)="sidenav.toggle()"
+      mat-icon-button>
          <mat-icon>menu</mat-icon> 
       </button>
 
       <span class="spacer"></span>
 
-      <button mat-button >
+      <span>{{auth.usuario}}</span>
+
+      <button (click)="logout()" 
+      mat-button >
          Logout
       </button>
    </mat-toolbar>

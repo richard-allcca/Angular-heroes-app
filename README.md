@@ -34,6 +34,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 15. Inyección de servicios manualmente
 
+16. Guards - CanLoad
+
 ## Enlaces
 
 - [Angular Material](https://material.angular.io/)
@@ -61,4 +63,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
       @Injectable({
       providedIn: 'root'
       })
-  
+
+## Notas - commandos CLI
+
+1. Guards - utilizado en rutas privadas, ejemplo en "app.routing.module"
+
+         ng g guard nameFolder/nameFolder/nameFile
