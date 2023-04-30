@@ -3,18 +3,18 @@ import { Heroe } from '../../interfaces/heroes.interface';
 import { HeroesService } from '../../services/heroes.service';
 
 @Component({
-   selector: 'app-hero-card',
-   templateUrl: './hero-card.component.html',
-   styleUrls: ['./hero-card.component.css']
+  selector: 'app-hero-card',
+  templateUrl: './hero-card.component.html',
+  styleUrls: ['./hero-card.component.css']
 })
 export class HeroCard implements OnInit {
 
-   @Input() hero!: Heroe;
+  @Input() hero!: Heroe;
 
-   constructor(private heroesService: HeroesService) { }
+  constructor(private heroesService: HeroesService) { }
 
-   ngOnInit(): void {
-      // this.heroe.characters
-   }
+  ngOnInit(): void {
+    // this.heroe.characters
+  }
 
 }

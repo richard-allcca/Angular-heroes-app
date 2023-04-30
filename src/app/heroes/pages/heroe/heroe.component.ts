@@ -11,30 +11,31 @@ import { HeroesService } from '../../services/heroes.service';
 })
 export class HeroeComponent implements OnInit {
 
-   heroe!: Heroe;
+  heroe!: Heroe;
 
-   constructor(
-      private activateRoute: ActivatedRoute,
-      private heroesService: HeroesService,
-      private rotuer: Router
-   ) { }
+  constructor(
+    private activateRoute: ActivatedRoute,
+    private heroesService: HeroesService,
+    private rotuer: Router
+  ) { }
 
   ngOnInit(): void {
-      this.activateRoute.params
-         .pipe(
-            switchMap(({ id }) => this.heroesService.getHeroePorId(id)),
-            tap(console.log)
-         )
-         .subscribe(
-            {
-               next: (heroe) => this.heroe = heroe,
-               error: (err) => console.log(err)
-            }
-         )
-   }
+    this.activateRoute.params
+      .pipe(
+        switchMap(({ id }) => this.heroesService.getHeroePorId(id)),
+        tap((valor)=>console.log('heroe-c',valor))
+        // tap(console.log)
+      )
+      .subscribe(
+        {
+          next: (heroe) => this.heroe = heroe,
+          error: (err) => console.log(err)
+        }
+      );
+  }
 
-   regresar() {
-      this.rotuer.navigate(['/heroes']);
+  regresar() {
+    this.rotuer.navigate(['/heroes']);
   }
 
 }

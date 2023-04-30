@@ -1,4 +1,7 @@
-
+<!-- NOTE -
+  pipe - image: valida que venga una imagen o aplica una default
+  ['/heroes/',hero.id]: contruye la ruta con 2 string por ser anidada
+-->
 
 <mat-card >
    <mat-card-header>
@@ -17,7 +20,7 @@
       </p>
    </mat-card-content>
 
-   <mat-card-actions>
+   <mat-card-actions> <!-- espacio reservado para btn -->
       <button mat-button 
          color="warn"
          [routerLink]="['/heroes/',hero.id]">

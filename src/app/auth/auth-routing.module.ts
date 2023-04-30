@@ -5,34 +5,32 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 
 const routes: Routes = [
-   {
-      path: '',
-      children: [
-         {
-            path: 'login',
-            component: LoginComponent
-         },
-         {
-            path: 'register',
-            component: RegisterComponent
-         },
-         {
-            path: '**',
-            redirectTo: 'login'
-         }
-      ]
-   }
-]
-
-// NOTE - con rutas hijas usar el forChild() de RouterModule
+  {
+    path: '',
+    children: [
+      {
+        path: 'login',
+        component: LoginComponent
+      },
+      {
+        path: 'register',
+        component: RegisterComponent
+      },
+      {
+        path: '**',
+        redirectTo: 'login'
+      }
+    ]
+  }
+];
 
 @NgModule({
-   declarations: [],
-   imports: [
-      RouterModule.forChild(routes)
-   ],
-   exports: [
-      RouterModule
-   ]
+  declarations: [],
+  imports: [
+    RouterModule.forChild(routes)
+  ],
+  exports: [
+    RouterModule
+  ]
 })
 export class AuthRoutingModule { }

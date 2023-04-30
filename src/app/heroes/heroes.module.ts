@@ -19,22 +19,22 @@ import { ConfirmarComponent } from './components/confirmar/confirmar.component';
 
 
 @NgModule({
-   declarations: [
-      AgregarComponent,
-      BuscarComponent,
-      HeroCard,
-      HeroeComponent,
-      HomeComponent,
-      ImagenPipe,
-      ListadoComponent,
-      ConfirmarComponent
-   ],
-   imports: [
-      CommonModule,
-      FlexLayoutModule,
-      FormsModule,
-      HeroesRoutingModule,
-      MaterialModule,
-   ]
+  declarations: [
+    AgregarComponent,
+    BuscarComponent,
+    HeroCard,
+    HeroeComponent,
+    HomeComponent,
+    ImagenPipe,
+    ListadoComponent,
+    ConfirmarComponent
+  ],
+  imports: [
+    CommonModule,
+    FlexLayoutModule,
+    FormsModule,
+    HeroesRoutingModule,
+    MaterialModule,
+  ]
 })
 export class HeroesModule { }

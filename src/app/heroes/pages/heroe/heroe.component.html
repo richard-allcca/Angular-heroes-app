@@ -1,9 +1,12 @@
+<!-- SECTION - Loader -->
 
 <mat-grid-list cols="1" *ngIf="!heroe; else divHeroe" >
    <mat-grid-tile>
       <mat-spinner></mat-spinner>
    </mat-grid-tile>
 </mat-grid-list>
+
+<!-- SECTION - Heroe -->
 
 <ng-template #divHeroe >
    <mat-grid-list cols="1" >
@@ -12,17 +15,18 @@
             lxLayout.xs="column"
             fxLayoutGap="30px">
 
+            <!-- Img -->
             <div fxFlex="50">
                <h2>{{heroe.superhero}} <small>{{heroe.alter_ego}}</small></h2>
                <mat-divider></mat-divider>
                <br>
                <img [src]="heroe | imagen" alt="">
             </div>
-            
+            <!-- Text -->
             <div fxFlex="50">
                <h2>{{heroe.publisher}}</h2>
                <mat-divider></mat-divider>
-               
+
                <mat-list dense>
                    <mat-list-item>
                        {{heroe.first_appearance}}
@@ -46,7 +50,7 @@
                </button>
 
             </div>
-            
+
 
       </div>
    </mat-grid-list>

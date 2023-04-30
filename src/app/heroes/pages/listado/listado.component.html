@@ -1,14 +1,25 @@
+<!-- NOTE - 
+  fxLayoutAlign: centra todos los hijos
+  fxLayoutGap: para en gap entre hijos
+  fxFlex: le dice cuanto del porcentaje de la pantalla debe tomar
+ -->
+
 <h1>Listado de Héroes</h1>
 <mat-divider></mat-divider>
-<br>
+<br />
 
-
-<div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="20">
-   
-   <div fxFlex="20" fxFlex.lg="15" fxFlex.md="30" *ngFor="let hero of listHeroes">
-      
-      <app-hero-card [hero]="hero"></app-hero-card>
-
-   </div>
-
+<div
+  fxLayout="row wrap"
+  fxLayout.xs="column"
+  fxLayoutAlign="center"
+  fxLayoutGap="20"
+>
+  <div
+    fxFlex="20"
+    fxFlex.lg="15"
+    fxFlex.md="30"
+    *ngFor="let hero of listHeroes"
+  >
+    <app-hero-card [hero]="hero"></app-hero-card>
+  </div>
 </div>
