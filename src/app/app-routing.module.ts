@@ -22,10 +22,20 @@ const router: Routes = [
     component: ErrorPageComponent
   },
   {
+    path: '',
+    redirectTo: 'heroes',
+    pathMatch: 'full',
+  },
+  {
     path: '**',
     // component: ErrorPageComponent
     redirectTo: '404'
-  }
+  },
+  {
+    path: '**',
+    // component: ErrorPageComponent
+    redirectTo: '404'
+  },
 ];
 
 @NgModule({

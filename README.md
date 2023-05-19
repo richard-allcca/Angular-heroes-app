@@ -7,11 +7,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     npm install -D @angular/cli
     npm run start
 
-2. correr el local si tienes la version 14.2.0 cli de angular
+2. Correr el local si tienes la version 14.2.0 cli de angular
 
     ng serve -o
 
-3. Para levantar el servidor local (ubicate en la carpeta que que contiene la db)
+3. Levantar el servidor local (ubicate en la carpeta que que contiene la db)
 
     json-server --watch db.json --port 3000
 
@@ -64,11 +64,17 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - [Material Icon](https://fonts.google.com/icons?selected=Material+Icons:bookmark)
 - [Json Server](https://www.npmjs.com/package/json-server)
 
-## Npm
+## Dependencias
 
+- c/187
+
+      ng add @angular/material
+      npm install primeflex --save
+
+<!-- FIXME - PENDIENTE PARA ELIMINAR O MODIFICAR -->
       npm i @angular/flex-layout (solo en heroes.module)
       npm i -s @angular/flex-layout @angular/cdk (solo en heroes.module)
-      npm install -g json-server 
+      npm install -g json-server
 
 ## Notas - Rutas Hijas
 
@@ -89,3 +95,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 1. Guards - utilizado en rutas privadas, ejemplo en "app.routing.module"
 
          ng g guard nameFolder/nameFolder/nameFile
+
+### Paginas en heroes/pages
+
+- heroPage
+- layoutPage
+- listPage
+- newPage
+- searchPage

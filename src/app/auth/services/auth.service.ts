@@ -24,11 +24,9 @@ export class AuthService {
 
   verificaAuth(): Observable<boolean> {
 
-    if (!localStorage.getItem('ls-id-token')) {
-      return of(false);
-    }
+    if (!localStorage.getItem('ls-id-token')) return of(false);
 
-    // REVIEW - min 3 clase 226 para no usar of 
+    // REVIEW - min 3 clase 226 para no usar if
     return this.http.get<UsuarioAuth>(`${this.baseUrl}/usuarios/1`)
       .pipe(
         map(auth => {
